@@ -8,21 +8,21 @@ y duración de cada insumo.
 Organizada por categoría. Se marca `[x]` al comprar.
 
 ### Alimentos
-- [ ] Agua (3 L)
-- [ ] Aceite
+- [x] Agua (7 L)
+- [x] Aceite
 - [ ] Fideos
-- [ ] Leche en tarro
-- [ ] Rapiditas (tortillas)
+- [x] Leche en tarro
+- [x] Rapiditas (tortillas)
 - [ ] Papas (un par)
 - [ ] Miel (no urgente, se está acabando)
-- [ ] Pollo rostizado (para la cena de hoy)
+- [x] Pollo rostizado (para la cena de hoy)
 
 ### Mercado
 - [ ] Fruta
-- [ ] Fresas
+- [x] Fresas (congeladas)
 
 ### Higiene personal
-- [ ] Papel higiénico
+- [x] Papel higiénico
 - [ ] Crema de afeitar
 - [ ] Máquinas de afeitar
 
@@ -46,3 +46,9 @@ permite estimar cuándo reponer.
 
 | Artículo | Cantidad | Comprado | Se acabó | Duró (días) |
 |----------|----------|----------|----------|-------------|
+| Agua (7 L) | | 2026-10-03 | | |
+| Aceite | | 2026-10-03 | | |
+| Leche en tarro | | 2026-10-03 | | |
+| Rapiditas (tortillas) | | 2026-10-03 | | |
+| Fresas (congeladas) | | 2026-10-03 | | |
+| Papel higiénico | | 2026-10-03 | | |
