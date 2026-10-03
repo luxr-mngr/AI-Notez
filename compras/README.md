@@ -15,6 +15,7 @@ Organizada por categoría. Se marca `[x]` al comprar.
 - [ ] Rapiditas (tortillas)
 - [ ] Papas (un par)
 - [ ] Miel (no urgente, se está acabando)
+- [ ] Pollo rostizado (para la cena de hoy)
 
 ### Mercado
 - [ ] Fruta
