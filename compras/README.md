@@ -8,19 +8,29 @@ y duración de cada insumo.
 Organizada por categoría. Se marca `[x]` al comprar.
 
 ### Alimentos
-- [ ]
+- [ ] Agua (3 L)
+- [ ] Aceite
+- [ ] Fideos
+- [ ] Leche en tarro
+- [ ] Rapiditas (tortillas)
+- [ ] Papas (un par)
+- [ ] Miel (no urgente, se está acabando)
 
-### Limpieza
-- [ ]
+### Mercado
+- [ ] Fruta
 
 ### Higiene personal
-- [ ]
+- [ ] Papel higiénico
+- [ ] Crema de afeitar
+- [ ] Máquinas de afeitar
 
 ### Hogar
-- [ ]
+- [ ] Contenedor pequeño para dosificar lejía (el anterior se rompió)
 
-### Otros
-- [ ]
+### Revisado, hay stock
+- Infusiones
+- Detergente
+- Lejía
 
 ## Comparación de precios
 
