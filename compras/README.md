@@ -19,6 +19,7 @@ Organizada por categoría. Se marca `[x]` al comprar.
 
 ### Mercado
 - [ ] Fruta
+- [ ] Fresas
 
 ### Higiene personal
 - [ ] Papel higiénico
