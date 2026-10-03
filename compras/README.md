@@ -55,7 +55,7 @@ Organizada por categoría. Se marca `[x]` al comprar.
 | Tiras de pollo | Tottus | S/ 16.90 | 1 | S/ 16.90 | 2026-10-02 |
 | Arándanos | Tottus | S/ 9.09 | 250 g | S/ 36.36 / kg | 2026-10-02 |
 | Bebida naranja/zanahoria | Tottus | S/ 8.00 | 1 botella | S/ 8.00 | 2026-10-02 |
-| Palta fuerte | Tottus | S/ 8.25 | 0.630 kg | S/ 13.10 / kg | 2026-10-02 |
+| Palta fuerte | Tottus | S/ 8.25 | 2 unid. (0.630 kg) | S/ 13.10 / kg, S/ 4.13 c/u | 2026-10-02 |
 | Tomate italiano | Tottus | S/ 2.14 | 0.275 kg | S/ 7.79 / kg | 2026-10-02 |
 | Lechuga crespa | Tottus | S/ 2.69 | 1 | S/ 2.69 | 2026-10-02 |
 | Harina preparada | Tottus | S/ 4.20 | 1 | S/ 4.20 | 2026-10-02 |
@@ -67,14 +67,15 @@ Organizada por categoría. Se marca `[x]` al comprar.
 Se registra la fecha de compra y la fecha en que se acabó. La duración
 permite estimar cuándo reponer.
 
-| Artículo | Cantidad | Comprado | Se acabó | Duró (días) |
-|----------|----------|----------|----------|-------------|
-| Agua San Luis | 7 L | 2026-10-02 | | |
-| Aceite | 900 ml | 2026-10-02 | | |
-| Leche UHT | 3 bolsas x 800 ml | 2026-10-02 | | |
-| Leche sin lactosa | 6 | 2026-10-02 | | |
-| Tortillas artesanales | 1 paquete | 2026-10-02 | | |
-| Fresa congelada | 1 kg | 2026-10-02 | | |
-| Papel higiénico Noble Plus | 30 rollos | 2026-10-02 | | |
-| Harina preparada | 1 | 2026-10-02 | | |
-| Esencia de vainilla | 1 | 2026-10-02 | | |
+| Artículo | Cantidad | Comprado | Se acabó | Duró (días) | Consumo |
+|----------|----------|----------|----------|-------------|---------|
+| Agua San Luis | 7 L | 2026-10-02 | | | |
+| Aceite | 900 ml | 2026-10-02 | | | |
+| Leche UHT | 3 bolsas x 800 ml | 2026-10-02 | | | |
+| Leche sin lactosa | 6 | 2026-10-02 | | | |
+| Tortillas artesanales | 1 paquete | 2026-10-02 | | | |
+| Fresa congelada | 1 kg | 2026-10-02 | | | |
+| Papel higiénico Noble Plus | 30 rollos | 2026-10-02 | | | |
+| Harina preparada | 1 | 2026-10-02 | | | |
+| Esencia de vainilla | 1 | 2026-10-02 | | | |
+| Palta fuerte | 2 unid. (0.630 kg) | 2026-10-02 | | | 1 comida el 2026-10-03, queda 1 |
