@@ -47,13 +47,14 @@ Organizada por categoría. Se marca `[x]` al comprar.
 | Aceite | Tottus | S/ 7.50 | 900 ml | S/ 8.33 / L | 2026-10-02 |
 | Agua San Luis bidón | Tottus | S/ 5.20 | 7 L | S/ 0.74 / L | 2026-10-02 |
 | Fresa congelada | Tottus | S/ 21.50 | 1 kg | S/ 21.50 / kg | 2026-10-02 |
-| Leche UHT | Tottus | S/ 12.90 | 1 | S/ 12.90 | 2026-10-02 |
+| Leche UHT (bolsa 800 ml) | Tottus | S/ 12.90 | 3 x 800 ml | S/ 4.30 c/u, S/ 5.38 / L | 2026-10-02 |
 | Leche sin lactosa | Tottus | S/ 23.90 | x6 | S/ 3.98 c/u | 2026-10-02 |
 | Papel higiénico Noble Plus | Tottus | S/ 32.90 | 30 rollos | S/ 1.10 / rollo | 2026-10-02 |
 | Tortillas artesanales | Tottus | S/ 8.50 | 1 paquete | S/ 8.50 | 2026-10-02 |
 | Pollo rostizado | Tottus | S/ 22.90 | 1 | S/ 22.90 | 2026-10-02 |
 | Tiras de pollo | Tottus | S/ 16.90 | 1 | S/ 16.90 | 2026-10-02 |
-| Arándanos | Tottus | S/ 9.09 | x2 | S/ 4.55 c/u | 2026-10-02 |
+| Arándanos | Tottus | S/ 9.09 | 250 g | S/ 36.36 / kg | 2026-10-02 |
+| Bebida naranja/zanahoria | Tottus | S/ 8.00 | 1 botella | S/ 8.00 | 2026-10-02 |
 | Palta fuerte | Tottus | S/ 8.25 | 0.630 kg | S/ 13.10 / kg | 2026-10-02 |
 | Tomate italiano | Tottus | S/ 2.14 | 0.275 kg | S/ 7.79 / kg | 2026-10-02 |
 | Lechuga crespa | Tottus | S/ 2.69 | 1 | S/ 2.69 | 2026-10-02 |
@@ -70,7 +71,7 @@ permite estimar cuándo reponer.
 |----------|----------|----------|----------|-------------|
 | Agua San Luis | 7 L | 2026-10-02 | | |
 | Aceite | 900 ml | 2026-10-02 | | |
-| Leche UHT | 1 | 2026-10-02 | | |
+| Leche UHT | 3 bolsas x 800 ml | 2026-10-02 | | |
 | Leche sin lactosa | 6 | 2026-10-02 | | |
 | Tortillas artesanales | 1 paquete | 2026-10-02 | | |
 | Fresa congelada | 1 kg | 2026-10-02 | | |
