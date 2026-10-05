@@ -138,13 +138,31 @@ Sin números de cuenta. Datos iniciales:
 - Nombre, monto objetivo, fecha objetivo, aportes.
 - Barra de avance. Ej. "Fondo de emergencia", "Maestría".
 
-### 5.6 Carga masiva (CSV)
+### 5.6 Ingresos
+
+- Formulario simple: fecha, monto, moneda, cuenta destino, tipo
+  (Sueldo, Freelance, Otro) y descripción opcional.
+- Registrar un ingreso tipo "Sueldo" abre un ciclo nuevo.
+- El ingreso suma al saldo de la cuenta destino.
+- Claude puede registrar y editar ingresos vía MCP, con confirmación.
+
+### 5.7 Carga masiva (CSV)
 
 - Subir un CSV con columnas mapeables a los campos de movimiento.
 - Vista previa con errores por fila antes de guardar.
 - Se usará al final para migrar el Excel actual.
+- Columnas del Excel actual:
 
-### 5.7 Análisis
+| Columna Excel | Formato | Campo en la app |
+|---|---|---|
+| Fecha | dd/mm/aaaa | fecha |
+| Método de pago | Texto de lista | metodo_pago (por nombre) |
+| Tipo | Texto de lista | categoria (por nombre) |
+| Empresa | Texto | empresa |
+| Descripción | Texto | descripcion |
+| Monto | Soles | monto_original, moneda = PEN |
+
+### 5.8 Análisis
 
 - Gasto mensual por categoría a través de los meses (barras apiladas).
 - Comparación mes actual vs promedio de los últimos 3 meses.
@@ -168,6 +186,7 @@ personalizado en claude.ai para usarlo desde todos los dispositivos, y con
 | `metas` | Lectura | Avance de metas de ahorro |
 | `resumen_semanal` | Lectura | Gasto de la semana, alertas, comparación |
 | `preparar_movimientos` | Borrador | Recibe 1 o más gastos, ingresos o pagos. Devuelve una vista previa y un `borrador_id` |
+| `preparar_edicion` | Borrador | Cambia o elimina un movimiento existente (gasto o ingreso) |
 | `preparar_saldo` | Borrador | Saldo de una cuenta en una fecha |
 | `preparar_conciliacion` | Borrador | Recibe movimientos extraídos de un estado de cuenta. Devuelve: coinciden, faltan registrar, sobran |
 | `confirmar` | Escritura | Guarda un `borrador_id` |
@@ -274,13 +293,30 @@ Sin números de cuenta, tarjeta ni identificadores bancarios en ninguna tabla.
 
 ## 11. Decisiones tomadas
 
-- Contador de Luxr: gasto personal (categoría Otros, empresa Ninguna).
+- Contador de Luxr: gasto personal, categoría **Servicios**.
+- Pensión PUCP y suscripciones de IA (Claude, Google, OpenAI): **Servicios**.
 - TC BCP: sin deuda.
 - Subdominio: `finanzas.luxrcore.com`.
 - Migración del Excel: al final (Fase 4), vía carga masiva CSV.
+- Ingresos: sección propia (5.6).
+
+### 11.1 Topes mensuales iniciales
+
+Los topes se guardan por ciclo, así Servicios baja desde enero sin tocar los demás.
+
+| Categoría | Oct a Dic 2026 | Desde Ene 2027 | Detalle |
+|---|---|---|---|
+| Alimentación | S/ 800 | S/ 800 | Super 500 + delivery 300 |
+| Transporte | S/ 300 | S/ 300 | Taxis |
+| Servicios | S/ 1,470 | S/ 655 | Luz 62, gas 45, internet 119, celular 87, Interseguro 34, contador 150, IA ~155 (US$ 45.54), pensión 815 hasta dic |
+| Compras | S/ 100 | S/ 100 | |
+| Entretenimiento | S/ 50 | S/ 50 | |
+| Salud y bienestar | S/ 50 | S/ 50 | |
+| Otros | S/ 50 | S/ 50 | Antes 200, el contador pasó a Servicios |
+| **Total** | **S/ 2,820** | **S/ 2,005** | |
+
+Supuesto: OpenAI US$ 20/mes. Tipo de cambio ~3.40.
 
 ## 12. Preguntas abiertas
 
-1. Topes mensuales por categoría (ver chat).
-2. Categoría de la pensión PUCP y de las suscripciones en USD.
-3. Columnas del Excel actual de gastos (para diseñar el CSV).
+Ninguna bloqueante. Listo para Fase 1.
