@@ -38,6 +38,7 @@ El plan de deuda queda fuera. Se maneja en Excel (`libro-caja-deuda.xlsx`).
 | 15 | Acceso | Solo el usuario, login con Google, **sesión persistente** |
 | 16 | Datos sensibles | No guardar números de cuenta ni identificadores bancarios |
 | 17 | Exportar | No por ahora (MCP lo cubre) |
+| 17b | Carga masiva | Sí: importar CSV (para migrar el Excel actual, al final) |
 | 18 | Infra | Cuenta Cloudflare + dominio `luxrcore.com` |
 | 19 | Stack | El más liviano y con menos mantenimiento |
 | 20 | Repo | Repositorio nuevo |
@@ -47,8 +48,12 @@ El plan de deuda queda fuera. Se maneja en Excel (`libro-caja-deuda.xlsx`).
 
 ### 4.1 Ciclo de presupuesto
 
-El ciclo va **de un día de sueldo al siguiente**, no del día 1 al 30.
-El día de sueldo es configurable (hoy: último día del mes).
+El ciclo va **de un sueldo al siguiente**, no del día 1 al 30.
+El sueldo llega entre el 30 y el 1 del mes siguiente, sin fecha fija. Por eso:
+
+- El ciclo nuevo empieza cuando se registra el ingreso tipo "Sueldo".
+- Para calcular los días que faltan se usa el último día del mes.
+- Si el sueldo no llega el último día, el ciclo actual se extiende hasta que se registre.
 
 ### 4.2 Qué cuenta como gasto
 
@@ -133,7 +138,13 @@ Sin números de cuenta. Datos iniciales:
 - Nombre, monto objetivo, fecha objetivo, aportes.
 - Barra de avance. Ej. "Fondo de emergencia", "Maestría".
 
-### 5.6 Análisis
+### 5.6 Carga masiva (CSV)
+
+- Subir un CSV con columnas mapeables a los campos de movimiento.
+- Vista previa con errores por fila antes de guardar.
+- Se usará al final para migrar el Excel actual.
+
+### 5.7 Análisis
 
 - Gasto mensual por categoría a través de los meses (barras apiladas).
 - Comparación mes actual vs promedio de los últimos 3 meses.
@@ -249,7 +260,7 @@ Sin números de cuenta, tarjeta ni identificadores bancarios en ninguna tabla.
 | 1. MVP | D1, catálogos, formulario multi-fila, dashboard, semáforo, tipo de cambio, Access, deploy en `finanzas.luxrcore.com` | Registrar y ver "hoy puedes gastar" desde el celular |
 | 2. MCP | Servidor MCP, OAuth, herramientas de lectura y borrador/confirmar | Registrar y consultar hablando con Claude |
 | 3. Completo | Saldos, metas, análisis, conciliación, resumen semanal | Reemplaza el Excel de gastos |
-| 4. Migración | Importar el histórico del Excel actual | Análisis con meses anteriores |
+| 4. Migración | Carga masiva CSV + importar el histórico del Excel actual | Análisis con meses anteriores |
 
 ## 10. Riesgos
 
@@ -261,22 +272,15 @@ Sin números de cuenta, tarjeta ni identificadores bancarios en ninguna tabla.
 | API de tipo de cambio cae | Usar último valor guardado + edición manual |
 | Pérdida de datos | D1 Time Travel + consulta completa vía MCP |
 
-## 11. Preguntas abiertas
+## 11. Decisiones tomadas
 
-1. **Topes iniciales por categoría.** Propuesta a partir del plan actual:
+- Contador de Luxr: gasto personal (categoría Otros, empresa Ninguna).
+- TC BCP: sin deuda.
+- Subdominio: `finanzas.luxrcore.com`.
+- Migración del Excel: al final (Fase 4), vía carga masiva CSV.
 
-| Categoría | Tope propuesto | Base |
-|---|---|---|
-| Alimentación | S/ 800 | Super 500 + delivery 300 |
-| Transporte | S/ 300 | Taxis |
-| Servicios | S/ 1,161.50 hasta dic, S/ 346.50 desde ene | Luz, gas, internet, celular, Interseguro + pensión |
-| Compras | S/ 100 | Por definir |
-| Entretenimiento | S/ 50 | Por definir |
-| Salud y bienestar | S/ 50 | Por definir |
-| Otros | S/ 200 | Incluye contador Luxr (S/ 150) |
+## 12. Preguntas abiertas
 
-2. ¿El contador de Luxr va como gasto personal o con empresa "Luxr"?
-3. ¿Tienes deuda en la **TC BCP**? No apareció en el plan de deuda.
-4. ¿Puedes compartir el Excel actual de gastos para la migración (Fase 4)?
-5. ¿El sueldo llega siempre el último día del mes, o el último día hábil?
-6. ¿Subdominio preferido? Propuesta: `finanzas.luxrcore.com`.
+1. Topes mensuales por categoría (ver chat).
+2. Categoría de la pensión PUCP y de las suscripciones en USD.
+3. Columnas del Excel actual de gastos (para diseñar el CSV).
