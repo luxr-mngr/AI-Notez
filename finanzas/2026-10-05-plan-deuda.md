@@ -1,5 +1,7 @@
 # Plan de deuda - 2026-10-05
 
+> Reemplazado por `2026-10-31-plan-deuda.md`.
+
 Estilo: reglas de ASD-STE100 adaptadas al español. Frases cortas. Una
 acción por paso. Voz activa. La lógica va separada de la instrucción.
 Nota: ASD-STE100 oficial es solo en inglés. Esto es una adaptación.
