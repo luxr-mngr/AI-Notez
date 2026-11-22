@@ -75,10 +75,10 @@ Hoy no hay pagos vencidos ni por vencer en noviembre.
 | Visa Infinite (estado 21/11) | aprox. S/ 1,250 |
 | ExtraCash cuota 2 | S/ 535 |
 | Gastos de diciembre (débito) | S/ 1,347 |
-| **Prepago ExtraCash o fondo de mudanza** | **aprox. S/ 1,470** |
+| **Prepago ExtraCash** | **aprox. S/ 1,470** |
 
-- Lógica: el plan A2 manda el sobrante a prepago (reducir plazo). Si la
-  mudanza es en diciembre, prioriza garantía y primer alquiler.
+- Lógica: el plan A2 manda el sobrante a prepago (reducir plazo).
+- La mudanza se canceló (22/11). Todo el sobrante va a prepago.
 
 **Paso 6. Desde enero 2027, sin pensión ni mantenimiento.**
 - Quedan libres aprox. S/ 1,012 al mes.
@@ -91,6 +91,5 @@ Hoy no hay pagos vencidos ni por vencer en noviembre.
 ## 5. Riesgos
 
 - Multa del auto (S/ 20,000) en proceso judicial. No tomar deuda nueva.
-- Fecha de mudanza y alquiler aún por confirmar.
 - El cargo de S/ 13.95 por US$5.84 no calza con el tipo de cambio.
   Revisar en el estado de cuenta del 21/11.
